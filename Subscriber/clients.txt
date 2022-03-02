@@ -1,0 +1,28 @@
+#                       * -------------------------------------------------- *
+#                       * FILE DI CONFIGURAZIONE MQTT DEL SINGOLO NODO IOT   *
+#                       * -------------------------------------------------- *
+# Questo file viene letto dallo script python per sapere quali sono i clientID dei singoli nodi
+#
+# Infatti è necessario avere una corrispondenza univoca tra nodo e dati accelerometrici.
+# Dal momento che il protocollo MQTT evita esplicitamente questa possibilità (effettua DECOUPLING)
+# per sapere quale nodo invia quali dati accelerometrici viene aggiunto il clientID al topic.
+# In pratica, i topic diventeranno:
+#   * ALL  -->  root_topic_ALL + clientID
+#   * HASH -->  root_topic_ + clientID
+#
+# I dati potranno quindi essere filtrati utilizzando semplicemente il topic per determinare quale client (nodo) li ha
+# inviati.
+#
+# ------------------------------------------------------ #
+#   QUESTI SONO COMUNI A TUTTI NODI - NON MODIFICARE !!  #
+# ------------------------------------------------------ #
+broker=iconpush.tim.it
+root_topic_ALL=unige/5gsmartg/up/ALL/
+root_topic_HASH=unige/5gsmartg/up/HASH/
+username=unige5gsmartguser1
+password=990da8bd-8160-97aca3ed98a7
+# ---------------------------------------- #
+#   AGGIUNGERE I 'clientID' DI OGNI NODO   #
+# ---------------------------------------- #
+# Il formato è 'comma-separated'
+clientIDs=1,2,3,4,5,6

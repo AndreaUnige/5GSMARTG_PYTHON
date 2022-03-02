@@ -1,0 +1,27 @@
+#                       * -------------------------------------------------- *
+#                       * FILE DI CONFIGURAZIONE MQTT DEL SINGOLO NODO IOT   *
+#                       * -------------------------------------------------- *
+# Questo file viene letto dallo script python di invio dati tramite MQTT per settare i parametri principali.
+#
+# Di particolare interesse è il campo 'clientID'
+# Infatti è necessario avere una corrispondenza univoca tra nodo e dati accelerometrici.
+# Dal momento che il protocollo MQTT evita esplicitamente questa possibilità (effettua DECOUPLING)
+# per sapere quale nodo invia quali dati accelerometrici aggiungiamo il clientID al topic
+# In pratica, i topic diventeranno:
+#   * ALL  -->  root_topic_ALL + clientID
+#   * HASH -->  root_topic_ + clientID
+#
+# I dati potranno quindi essere filtrati dal subscriber utilizzando semplicemente il topic
+#
+# ------------------------------------------------------ #
+#   QUESTI SONO COMUNI A TUTTI NODI - NON MODIFICARE !!  #
+# ------------------------------------------------------ #
+broker=iconpush.tim.it
+root_topic_ALL=unige/5gsmartg/up/ALL/
+root_topic_HASH=unige/5gsmartg/up/HASH/
+username=unige5gsmartguser1
+password=990da8bd-8160-97aca3ed98a7
+# ------------------------------------------ #
+#   MODIFICARE IL 'clientID' PER OGNI NODO   #
+# ------------------------------------------ #
+clientID=1,2,3,4,5,6
