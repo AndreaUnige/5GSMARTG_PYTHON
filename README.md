@@ -1,8 +1,8 @@
 # 5GSMARTG_PYTHON
 
-Il softaware è diviso in 2 cartelle:
-	- Publisher
-	- Subscriber
+Il software è diviso in 2 cartelle:\n
+	\t- Publisher\n
+	\t- Subscriber\n\n
 	
 Il Publisher è stato sviluppato per interfacciarsi con il singolo nodo IoT ed inviare i campioni accellerometrici (x,y,z) verso il broker MQTT.
 
