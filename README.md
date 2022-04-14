@@ -1,10 +1,11 @@
 # 5GSMARTG_PYTHON
 <br>
-Questo programma è un software gratuito: puoi ridistribuirlo e/o modificarlo secondo i termini della GNU General Public License pubblicata da Free Software Foundation, versione 3 della Licenza, oppure qualsiasi versione successiva.<br>
+<h2>Questo programma è un software gratuito: puoi ridistribuirlo e/o modificarlo secondo i termini della GNU General Public License pubblicata da Free Software Foundation, versione 3 della Licenza, oppure qualsiasi versione successiva.<br>
 <br>
 Questo programma è distribuito nella speranza che possa essere utile, ma SENZA ALCUNA GARANZIA; senza nemmeno la garanzia implicita di COMMERCIABILITÀ o IDONEITÀ PER UNO SCOPO PARTICOLARE. Vedi il GNU General Public License per maggiori dettagli.<br>
 <br>
 <a href="http://www.gnu.org/licenses">GNU General Public License</a>
+</h2>
 <br>
 <br><br>
 Il software è diviso in 2 cartelle:<br>
