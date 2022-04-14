@@ -1,6 +1,6 @@
 # 5GSMARTG_PYTHON
 
-Il software è diviso in 2 cartelle:\n
+Il software è diviso in 2 cartelle:<br>
 	\t- Publisher\n
 	\t- Subscriber\n\n
 	
